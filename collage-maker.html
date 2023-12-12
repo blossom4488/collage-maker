@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="collage-maker.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <title>Collage Maker</title>
+  </head>
+  <body>
+    <div class="title-container">
+      <h1>Collage Maker</h1>
+    </div>
+    
+    <div id="container">
+      <div id="collage" class="color-border">
+        <div class="box-container">
+          <div class="box-1">
+            <p>1</p>
+          </div>
+          <div class="box-2">
+            <p>2</p>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-3">
+            <p>3</p>
+          </div>
+        </div>
+      </div>
+     
+
+      <div>
+        <h2>Ready to send to a friend?</h2>
+        <form id="form-container" action="">
+            <div class="form-group">
+                <label for="your-name">Your Name</label>
+                <input
+                    id="your-name"
+                    class="form-control validate-input"
+                    type="text"
+                    name="your-name"
+                    placeholder="Your Name"
+                />
+               <p></p>
+            </div>
+    
+            <div class="form-group">
+                <label for="friend-name">Friend's Name</label>
+                <input
+                    id="friend-name"
+                    class="form-control validate-input"
+                    type="text"
+                    name="friend-name"
+                    placeholder="Friend's Name"
+                />
+                <p></p>
+            </div>
+    
+            <div class="form-group">
+                <label for="friends-email">Friend's Email</label>
+                <input
+                    id="friends-email"
+                    class="form-control validate-input"
+                    type="email"
+                    name="friends-email"
+                    placeholder="Enter Email"
+                />
+                <p></p>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Your Message</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"   placeholder="Enter a Friendly Message"></textarea>
+             <p></p>
+            </div>
+    
+            <button class="send-btn" type="submit">Send</button>
+            <button class="exit-btn">Exit</button>
+        </form>
+        <div id="email-sent" >
+          <h2>Email Sent!</h2>
+        <img src="email-sent.gif" >
+      </div>
+    </div>
+    
+    <script src="collage-maker.js"></script>
+  </body>
+</html>
